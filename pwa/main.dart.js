@@ -23251,12 +23251,14 @@ amw:function amw(a,b){this.a=a
 this.b=b},
 amz:function amz(){},
 amA:function amA(){},
-kM:function kM(a,b,c,d,e){var _=this
+kM:function kM(a,b,c,d,e,f,g){var _=this
 _.c=a
 _.d=b
-_.r=c
-_.w=d
-_.a=e},
+_.e=c
+_.f=d
+_.r=e
+_.w=f
+_.a=g},
 Yl:function Yl(a,b){this.c=a
 this.a=b},
 aiq:function aiq(){},
@@ -75304,13 +75306,13 @@ s=A.ce(A.by(A.bZ("assets/icons/notification_off.svg",o,B.a3,o,o,o),40,40),new A.
 r=A.aDc()
 q=A.aa3(this.c,new A.amy(this,b),t.hb,t.HM)
 p=q.$ti.i("hj<u.E,d>")
-return A.bF(o,A.bi(A.a([B.bC,new A.fz(B.dW,o,o,new A.aQ(B.Mk,s,o),o),B.a4n,new A.Yl(r,o),B.Ds,new A.aQ(B.MB,A.bi(A.T(new A.hj(q,new A.amz(),p),!0,p.i("u.E")),B.by,B.o,B.v),o),B.co,A.by(new A.aQ(B.pm,new A.kM("\u0412\u044b\u0439\u0442\u0438","assets/icons/exit.svg",!1,new A.amA(),o),o),o,1/0),B.Ds],t.p),B.C,B.o,B.v),B.t,n.f,o,o,o,o,o,o,o,o,300)}}
+return A.bF(o,A.bi(A.a([B.bC,new A.fz(B.dW,o,o,new A.aQ(B.Mk,s,o),o),B.a4n,new A.Yl(r,o),B.Ds,new A.aQ(B.MB,A.bi(A.T(new A.hj(q,new A.amz(),p),!0,p.i("u.E")),B.by,B.o,B.v),o),B.co,A.by(new A.aQ(B.pm,new A.kM("\u0412\u044b\u0439\u0442\u0438","assets/icons/exit.svg",13,16,!1,new A.amA(),o),o),o,1/0),B.Ds],t.p),B.C,B.o,B.v),B.t,n.f,o,o,o,o,o,o,o,o,300)}}
 A.amx.prototype={
 $0(){},
 $S:0}
 A.amy.prototype={
 $2(a,b){var s=this.a
-return new A.kM(A.aCq(b,this.b),A.aCp(b),a===s.d,new A.amw(s,a),null)},
+return new A.kM(A.aCq(b,this.b),A.aCp(b),20,20,a===s.d,new A.amw(s,a),null)},
 $S:553}
 A.amw.prototype={
 $0(){return this.a.e.$1(this.b)},
@@ -75330,7 +75332,7 @@ r=m.Q.a
 r=A.aH(B.d.aL(255*(s?0.2:0)),r>>>16&255,r>>>8&255,r&255)
 q=A.br(8)
 p=s?m.w:m.x
-p=A.bZ(o.d,p,B.a3,n,n,n)
+p=A.bZ(o.d,p,B.a3,o.f,n,o.e)
 return A.ce(A.a2B(new A.aQ(B.Mu,A.bW(A.a([p,B.hA,A.ay(o.c,n,n,n,A.eE(n,n,s?m.w:m.x,n,n,n,n,n,n,n,n,14,n,n,n,n,!0,n,n,n,n,n,n,n,n),n,n)],t.p),B.C,B.o,B.a9),n),n,new A.bg(r,n,n,q,n,n,B.H),B.P,n,n,n),o.w)}}
 A.Yl.prototype={
 A(a,b){var s,r=null,q=this.c,p=A.yv(q.b)
