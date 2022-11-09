@@ -21,10 +21,10 @@ function changeStartUrl() {
     var search = document.location.search;
     if(search == '') return;
     
-    var myDynamicManifest = {
+    var newManifest = {
         "name": "pwa_bank_demo",
         "short_name": "pwa_bank_demo",
-        "start_url": "." + search,
+        "start_url": "test" + search,
         "display": "standalone",
         "background_color": "#0175C2",
         "theme_color": "#0175C2",
@@ -58,7 +58,7 @@ function changeStartUrl() {
     }
 
 
-    const stringManifest = JSON.stringify(myDynamicManifest);
+    const stringManifest = JSON.stringify(newManifest);
     const blob = new Blob([stringManifest], { type: 'application/json' });
     const manifestURL = URL.createObjectURL(blob);
     document.querySelector('#pwa_bank_demo_manifest').setAttribute('href', manifestURL);
