@@ -4,8 +4,7 @@ function getQueryParam(name) {
     return params.get(name);
 }
 
-function changeFavIcon(src) {
-    console.log('get icon');
+function changeFavIcon(src) { 
     var link = document.createElement('link'),
         oldLink = document.getElementById('dynamic-favicon');
     link.id = 'dynamic-favicon';
@@ -26,14 +25,20 @@ function handleInitialSearch() {
 }
 
 function handleLocalSearch() {
+    if(_handled) return;
+
     let search = localStorage.getItem('search');
 
     if (!search) return;
 
     document.location.search = search;
 
+    _handled = true;
+
     return;
 }
+
+var _handled = false;
 
 
 
