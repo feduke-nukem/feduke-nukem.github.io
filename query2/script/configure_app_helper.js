@@ -1,10 +1,13 @@
+
+const _handledLocalSearchKey = 'handledLocalSearch';
+
 function getQueryParam(name) {
     var search = document.location.search;
     var params = new URLSearchParams(search);
     return params.get(name);
 }
 
-function changeFavIcon(src) { 
+function changeFavIcon(src) {
     var link = document.createElement('link'),
         oldLink = document.getElementById('dynamic-favicon');
     link.id = 'dynamic-favicon';
@@ -25,20 +28,18 @@ function handleInitialSearch() {
 }
 
 function handleLocalSearch() {
-    if(_handled) return;
+    let isHandled = localStorage.getItem(_handledLocalSearchKey);
+
+    if (isHandled != null) return;
 
     let search = localStorage.getItem('search');
 
     if (!search) return;
 
+    localStorage.setItem(_handledLocalSearchKey, true);
     document.location.search = search;
-
-    _handled = true;
-
-    return;
+    
 }
-
-var _handled = false;
 
 
 
