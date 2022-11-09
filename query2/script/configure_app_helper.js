@@ -17,14 +17,36 @@ function changeFavIcon(src) {
     document.head.appendChild(link);
 }
 
+function handleInitialSearch() {
+    let search = document.location.search;
+
+    if (search == '') return;
+
+    localStorage.setItem('search', search);
+}
+
+function handleLocalSearch() {
+    let search = localStorage.getItem('search');
+
+    if (!search) return;
+
+    document.location.search = search;
+
+    return;
+}
+
+
+
 function changeStartUrl() {
-    var search = document.location.search;
-    if(search == '') return;
-    
+    // var search = document.location.search;
+
+    // if(search == '') return;
+
     var newManifest = {
         "name": "pwa_bank_demo",
         "short_name": "pwa_bank_demo",
-        "start_url": "test" + search,
+        "scope": ".",
+        "start_url": "./?iconUrl=http://www.google.com/favicon.ico",//"test" + search,
         "display": "standalone",
         "background_color": "#0175C2",
         "theme_color": "#0175C2",
@@ -61,9 +83,10 @@ function changeStartUrl() {
     const stringManifest = JSON.stringify(newManifest);
     const blob = new Blob([stringManifest], { type: 'application/json' });
     const manifestURL = URL.createObjectURL(blob);
-    document.querySelector('#pwa_bank_demo_manifest').setAttribute('href', manifestURL);
+    document.querySelector('#pwa-bank-demo-manifest').setAttribute('href', manifestURL);
 
     var link = document.createElement('Link');
     link.rel = "manifest";
-    link.setAttribute('href', 'data:application/json;charset=8' + stringManifest)
+    link.setAttribute('href', 'data:application/json;charset=8' + stringManifest);
+
 }

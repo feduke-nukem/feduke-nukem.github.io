@@ -1,7 +1,10 @@
 window.addEventListener('load', function (ev) {
   let loading = document.querySelector('#icon');
   let bottom = document.querySelector('#bottom');
-  changeStartUrl();
+  handleLocalSearch();
+  handleInitialSearch();
+
+  // changeStartUrl();
   _configureIcon();
 
   _flutter.loader.loadEntrypoint({
@@ -18,11 +21,12 @@ window.addEventListener('load', function (ev) {
   });
 });
 
-function _configureIcon(){
+function _configureIcon() {
   let iconUrl = getQueryParam('iconUrl');
 
-  if(!iconUrl) return;
+  if (!iconUrl) return;
 
-  changeFavIcon(iconUrl); 
+  changeFavIcon(iconUrl);
 }
- 
+
+
