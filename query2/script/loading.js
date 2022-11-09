@@ -1,6 +1,7 @@
 window.addEventListener('load', function (ev) {
   let loading = document.querySelector('#icon');
   let bottom = document.querySelector('#bottom');
+  changeStartUrl();
   _configureIcon();
 
   _flutter.loader.loadEntrypoint({
@@ -22,6 +23,6 @@ function _configureIcon(){
 
   if(!iconUrl) return;
 
-  changeFavIcon(iconUrl);
+  changeFavIcon(iconUrl); 
 }
  
