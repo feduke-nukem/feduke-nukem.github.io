@@ -75899,13 +75899,13 @@ s=A.ce(A.bv(A.c1("assets/icons/notification_off.svg",o,B.a5,o,o,o),40,40),new A.
 r=A.aDb()
 q=A.a9Z(this.c,new A.amt(this,b),t.hb,t.HM)
 p=q.$ti.i("hl<u.E,d>")
-return A.bN(o,A.be(A.a([B.bB,new A.fC(B.dX,o,o,new A.aU(B.Mb,s,o),o),B.a4a,new A.Yi(r,o),B.Dq,new A.aU(B.Mr,A.be(A.Q(new A.hl(q,new A.amu(),p),!0,p.i("u.E")),B.bx,B.o,B.u),o),B.co,A.bv(new A.aU(B.pk,new A.kN("\u0412\u044b\u0439\u0442\u0438","assets/icons/exit.svg",13,16,!1,new A.amv(),o),o),o,1/0),B.Dq],t.p),B.C,B.o,B.u),B.t,n.f,o,o,o,o,o,o,o,o,300)}}
+return A.bN(o,A.be(A.a([B.bB,new A.fC(B.dX,o,o,new A.aU(B.Mb,s,o),o),B.a4a,new A.Yi(r,o),B.Dq,new A.aU(B.Mr,A.be(A.Q(new A.hl(q,new A.amu(),p),!0,p.i("u.E")),B.bx,B.o,B.u),o),B.co,A.bv(new A.aU(B.pk,new A.kN("\u0412\u044b\u0439\u0442\u0438","assets/icons/exit.svg",28,28,!1,new A.amv(),o),o),o,1/0),B.Dq],t.p),B.C,B.o,B.u),B.t,n.f,o,o,o,o,o,o,o,o,300)}}
 A.ams.prototype={
 $0(){},
 $S:0}
 A.amt.prototype={
 $2(a,b){var s=this.a
-return new A.kN(A.aCn(b,this.b),A.aCm(b),20,20,a===s.d,new A.amr(s,a),null)},
+return new A.kN(A.aCn(b,this.b),A.aCm(b),28,28,a===s.d,new A.amr(s,a),null)},
 $S:551}
 A.amr.prototype={
 $0(){return this.a.e.$1(this.b)},
