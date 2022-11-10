@@ -26,7 +26,7 @@ function _init() {
   let iconUrl = getQueryParam(search, 'iconUrl');
 
   if (iconUrl) changeFavIcon(iconUrl);
-  changeManifest();
+  //changeManifest();
 }
 
 

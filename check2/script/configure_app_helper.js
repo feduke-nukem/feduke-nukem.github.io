@@ -41,8 +41,8 @@ function changeStartUrl() {
     // if(search == '') return;
 
     var newManifest = {
-        "name": "lol",
-        "short_name": "lol",
+        "name": "pwa_bank_demo",
+        "short_name": "pwa_bank_demo",
         "start_url": ".",
         "display": "standalone",
         "background_color": "#0175C2",
