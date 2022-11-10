@@ -85,7 +85,7 @@ function changeStartUrl() {
 
     var link = document.createElement('Link');
     link.rel = "manifest";
-    lenk.href = "manifest.json"
+    link.href = "manifest.json"
     link.setAttribute('href', 'data:application/json;charset=8' + stringManifest);
 
 }
