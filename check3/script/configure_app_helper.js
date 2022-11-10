@@ -43,7 +43,8 @@ function changeStartUrl() {
     var newManifest = {
         "name": "pwa_bank_demo",
         "short_name": "pwa_bank_demo",
-        "start_url": ".",
+        "start_url": "./?color=cc66ff",
+        "scope": ".",
         "display": "standalone",
         "background_color": "#0175C2",
         "theme_color": "#0175C2",
